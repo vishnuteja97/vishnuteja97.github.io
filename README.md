@@ -48,7 +48,7 @@ All copy lives in `index.html`. The most common edits:
 | ------------------------- | ------------------------------------------------------------------ |
 | Name, role, hero tagline  | `<section id="hero">` near the top of `index.html`                 |
 | About paragraph + chips   | `<section id="about">`                                             |
-| Projects (8 cards)        | `<section id="projects">` — each is an `<article class="card">`   |
+| Projects (9 cards)        | `<section id="projects">` — each is an `<article class="card">`   |
 | Project filter tags       | `data-tags="..."` attribute on each project article                |
 | Skills buckets            | `<section id="skills">`                                            |
 | Education timeline        | `<section id="education">`                                         |

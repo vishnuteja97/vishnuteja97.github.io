@@ -255,8 +255,8 @@
         <p class="section-eyebrow">02 — Projects</p>
         <h2 class="section-title" id="projects-title">Selected <span class="accent">AI/ML projects</span>.</h2>
         <p class="section-lede">
-          Eight projects spanning computer vision, generative AI, privacy, video understanding,
-          and verification. Filter by area to narrow the view, then click any card to read details.
+          Nine projects spanning computer vision, generative AI, privacy, video understanding,
+          data, and verification. Filter by area to narrow the view, then click any card to read details.
         </p>
 
         <div class="filter-rail" role="toolbar" aria-label="Filter projects by area" id="project-filters">
@@ -268,6 +268,7 @@
           <button type="button" class="chip" aria-pressed="false" data-filter="detection">Detection</button>
           <button type="button" class="chip" aria-pressed="false" data-filter="verification">Verification</button>
           <button type="button" class="chip" aria-pressed="false" data-filter="platform">Platform</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="data">Data</button>
         </div>
 
         <div class="projects-grid" id="projects-grid">
@@ -383,6 +384,37 @@
               <span class="tag is-primary">Detection</span>
               <span class="tag is-primary">Vision Transformers</span>
               <span class="tag">PyTorch</span>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-tags="data">
+            <details class="project-disclosure">
+              <summary class="project-summary">
+              <div class="project-head">
+                <h3 class="project-title">NFL Database Application</h3>
+                <span class="project-date">May 2024</span>
+              </div>
+              <p class="project-org">Kansas State University</p>
+              <span class="project-chevron" aria-hidden="true">
+                <svg width="16" height="16"><use href="#i-chevron"/></svg>
+              </span>
+            </summary>
+              <div class="project-body">
+              <ul class="project-bullets">
+                <li>Built a lightweight CLI NFL database for detailed statistics and play-by-play data on players, teams, venues, and games — with multi-format result export.</li>
+                <li>PostgreSQL relational schema designed via database normalization to preserve functional dependencies and ensure data consistency.</li>
+                <li>Optimized query performance through data indexing strategies, enabling efficient handling of large datasets.</li>
+                <li>Integrated a logistic regression win-probability calculator and user authentication with register, login, and profile management.</li>
+                <li class="collab"><span class="collab-label">Collaborators:</span> James Chapman, Dr. Chuck Zumbaugh.</li>
+              </ul>
+            </div>
+            </details>
+            <div class="project-tags">
+              <span class="tag is-primary">Data</span>
+              <span class="tag is-primary">PostgreSQL</span>
+              <span class="tag">SQL Indexing</span>
+              <span class="tag">Logistic Regression</span>
+              <span class="tag">Authentication</span>
             </div>
           </article>
 
