@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Neon design tokens
+   --------------------------------------------------------------------------
+   Source: Neon skill (typeui.sh) — high-contrast electric glow.
+   The skill's brand is "neon glow on a dark surface", so the dark theme
+   is the default; the skill's light tokens are preserved under
+   [data-theme="light"] for an optional toggle.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand colors (from skill) ---- */
+  --color-primary: #bbf351;          /* electric lime */
+  --color-primary-ink: #0a0e1a;      /* readable text on lime fill */
+  --color-secondary: #00bcff;        /* electric cyan */
+  --color-secondary-ink: #04121b;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+
+  /* ---- Surfaces & text (dark-first) ---- */
+  --color-bg: #0a0e1a;               /* page canvas */
+  --color-bg-elev: #0e1424;          /* nav bar / sticky surfaces */
+  --color-surface: #111827;          /* cards */
+  --color-surface-2: #18223a;        /* hovered/raised surface */
+  --color-border: #1f2937;
+  --color-border-strong: #2b3a55;
+  --color-text: #f9fafb;             /* primary text */
+  --color-text-muted: #9ca3af;       /* secondary text  (7.58:1 on bg) */
+  --color-text-faint: #828d9a;       /* tertiary / metadata (5.71:1 on bg, AA) */
+
+  /* alpha companions used for glows and tints */
+  --color-primary-rgb: 187 243 81;
+  --color-secondary-rgb: 0 188 255;
+
+  /* ---- Spacing scale (4/8/12/16/24/32) ---- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;   /* derived for section rhythm */
+  --sp-8: 64px;
+  --sp-9: 96px;
+
+  /* ---- Type scale (14/16/18/24/32/40) ---- */
+  --fs-xs: 14px;
+  --fs-sm: 16px;
+  --fs-md: 18px;
+  --fs-lg: 24px;
+  --fs-xl: 32px;
+  --fs-2xl: 40px;
+  --fs-display: clamp(40px, 8vw, 88px);
+
+  /* line heights */
+  --lh-tight: 1.1;
+  --lh-snug: 1.3;
+  --lh-base: 1.55;
+
+  /* ---- Fonts ---- */
+  --font-body: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "STIX Two Text", "Times New Roman", Georgia, serif;
+  --font-mono: "Source Code Pro", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ---- Weights ---- */
+  --fw-thin: 100;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* ---- Radii ---- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* ---- Glow utilities ---- */
+  --glow-primary:
+    0 0 12px rgb(var(--color-primary-rgb) / 0.55),
+    0 0 32px rgb(var(--color-primary-rgb) / 0.25);
+  --glow-primary-soft:
+    0 0 8px rgb(var(--color-primary-rgb) / 0.35),
+    0 0 20px rgb(var(--color-primary-rgb) / 0.18);
+  --glow-secondary:
+    0 0 12px rgb(var(--color-secondary-rgb) / 0.55),
+    0 0 32px rgb(var(--color-secondary-rgb) / 0.25);
+  --glow-secondary-soft:
+    0 0 8px rgb(var(--color-secondary-rgb) / 0.35),
+    0 0 20px rgb(var(--color-secondary-rgb) / 0.18);
+
+  /* ---- Motion ---- */
+  --t-fast: 120ms;
+  --t-base: 180ms;
+  --t-slow: 320ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* ---- Layout ---- */
+  --container-max: 1120px;
+  --nav-h: 64px;
+
+  /* ---- Focus ring (consistent across all controls) ---- */
+  --focus-ring: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--color-primary);
+}
+
+/* Optional light theme — flip with <html data-theme="light"> if ever wired up.
+   Glow effects are intentionally muted in light mode (white surfaces drown them). */
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-bg-elev: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1f5f9;
+  --color-border: #e5e7eb;
+  --color-border-strong: #cbd5e1;
+  --color-text: #111827;
+  --color-text-muted: #4b5563;
+  --color-text-faint: #6b7280;
+
+  --glow-primary: 0 0 0 1px rgb(var(--color-primary-rgb) / 0.6);
+  --glow-primary-soft: 0 0 0 1px rgb(var(--color-primary-rgb) / 0.4);
+  --glow-secondary: 0 0 0 1px rgb(var(--color-secondary-rgb) / 0.6);
+  --glow-secondary-soft: 0 0 0 1px rgb(var(--color-secondary-rgb) / 0.4);
+
+  --color-primary-ink: #0a0e1a;
+}

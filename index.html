@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0E1A" />
+
+  <title>Vishnu Bondalakunta — AI/ML Engineer</title>
+  <meta name="description" content="AI/ML Engineer and Ph.D. candidate at Kansas State University working across computer vision, video understanding, and privacy-first generative AI." />
+  <meta name="author" content="Vishnu Bondalakunta" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vishnu Bondalakunta — AI/ML Engineer" />
+  <meta property="og:description" content="AI/ML Engineer and Ph.D. candidate at Kansas State University. Computer Vision, Video Understanding, Privacy-first GenAI." />
+
+  <!-- Inline favicon: lime "VB" mark on dark, matches the nav brand. -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230A0E1A'/><text x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='28' fill='%23BBF351'>VB</text></svg>" />
+
+  <!-- Fonts: Roboto (body), STIX Two Text (display), Source Code Pro (mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500;600;700&display=swap"
+  />
+
+  <link rel="stylesheet" href="styles/tokens.css?v=3" />
+  <link rel="stylesheet" href="styles/base.css?v=3" />
+  <link rel="stylesheet" href="styles/components.css?v=3" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ====================================================================
+       Inline icon sprite — referenced via <use href="#id"> below
+       ==================================================================== -->
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 7 9 6 9-6" />
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 .5C5.73.5.83 5.4.83 11.67c0 4.92 3.19 9.1 7.62 10.58.56.1.76-.24.76-.54 0-.27-.01-.97-.02-1.91-3.1.67-3.76-1.5-3.76-1.5-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.93.1-.72.39-1.22.71-1.5-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.43-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.14a10.7 10.7 0 0 1 5.61 0c2.14-1.44 3.08-1.14 3.08-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.77 1.15 2.99 0 4.27-2.6 5.21-5.08 5.49.4.34.76 1.02.76 2.06 0 1.49-.01 2.69-.01 3.05 0 .3.2.65.77.54 4.43-1.48 7.62-5.66 7.62-10.58C23.17 5.4 18.27.5 12 .5Z"/>
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.22 8.5h4.56V23H.22V8.5Zm7.6 0h4.37v1.98h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 6.99V23h-4.56v-7c0-1.67-.03-3.83-2.33-3.83-2.34 0-2.7 1.83-2.7 3.71V23H7.82V8.5Z"/>
+      </symbol>
+      <symbol id="i-scholar" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2 1 9l4.16 2.65A6.99 6.99 0 0 0 12 17a6.99 6.99 0 0 0 6.84-5.35L23 9 12 2Zm0 4.36L19 10 12 14.64 5 10l7-3.64ZM4 12.83v3.92l8 5.13 8-5.13v-3.92l-8 5.13-8-5.13Z"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 17 17 7"/>
+        <path d="M8 7h9v9"/>
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13Z"/>
+        <circle cx="12" cy="9" r="2.5"/>
+      </symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2 13.5 9 21 10.5 13.5 12 12 19 10.5 12 3 10.5 10.5 9 12 2Z"/>
+      </symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"/>
+      </symbol>
+    </defs>
+  </svg>
+
+
+  <!-- ====================================================================
+       Header / nav
+       ==================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="#hero" class="nav-brand" aria-label="Vishnu Bondalakunta — home">
+          <span class="brand-mark" aria-hidden="true">VB</span>
+          <span>Vishnu Bondalakunta</span>
+        </a>
+        <ul class="nav-list" id="nav-list">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#research">Research</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-mobile"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="bars" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+    <div class="nav-mobile" id="nav-mobile" hidden>
+      <ul class="nav-mobile-list">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#research">Research</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    <!-- ==================================================================
+         Hero
+         ================================================================== -->
+    <section id="hero" class="section hero" aria-labelledby="hero-name">
+      <div class="container">
+        <p class="hero-eyebrow"><span class="dot" aria-hidden="true"></span> Available for AI/ML research &amp; engineering collaborations</p>
+        <h1 class="hero-name" id="hero-name">
+          Vishnu <span class="neon">Bondalakunta</span>
+        </h1>
+        <p class="hero-role">Versatile AI/ML Engineer · Ph.D. Candidate, Kansas State University</p>
+        <ul class="hero-points">
+          <li>Full model lifecycle — R&amp;D to production</li>
+          <li>Computer Vision · Video Understanding · Privacy-first Generative AI</li>
+          <li>Bridges deep research and production-ready engineering</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">
+            View Projects
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="btn btn-secondary" href="mailto:vteja.bon997@gmail.com">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+            Email me
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Manhattan, KS · USA</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Computer Vision · Generative AI · Privacy</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>vteja.bon997@gmail.com</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================================================================
+         About
+         ================================================================== -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <p class="section-eyebrow">01 — About</p>
+        <h2 class="section-title" id="about-title">A researcher with a <span class="accent">production-engineering</span> reflex.</h2>
+
+        <div class="about-grid">
+          <ul class="about-points reveal" aria-label="About highlights">
+            <li class="about-point">
+              <div class="point-head">
+                <span class="point-num" aria-hidden="true">01</span>
+                <h3 class="point-title">Academic foundation</h3>
+              </div>
+              <div class="kv-list">
+                <div class="kv-item">
+                  <span class="kv-label">Ph.D. Computer Science</span>
+                  <span class="kv-arrow" aria-hidden="true">→</span>
+                  <span class="kv-value">Kansas State University</span>
+                  <span class="kv-tag">GPA 4.0</span>
+                </div>
+                <div class="kv-item">
+                  <span class="kv-label">B.S. (Research) Mathematics</span>
+                  <span class="kv-arrow" aria-hidden="true">→</span>
+                  <span class="kv-value">Indian Institute of Science, Bangalore</span>
+                </div>
+              </div>
+            </li>
+            <li class="about-point">
+              <div class="point-head">
+                <span class="point-num" aria-hidden="true">02</span>
+                <h3 class="point-title">Focus</h3>
+              </div>
+              <div class="point-tags" role="list" aria-label="Focus areas">
+                <span class="tag is-primary" role="listitem">Computer Vision</span>
+                <span class="tag is-primary" role="listitem">Video Understanding</span>
+                <span class="tag is-primary" role="listitem">Privacy-preserving Generative AI</span>
+              </div>
+            </li>
+            <li class="about-point">
+              <div class="point-head">
+                <span class="point-num" aria-hidden="true">03</span>
+                <h3 class="point-title">Approach</h3>
+              </div>
+              <p class="point-text">
+                Problem solver with <strong class="hl">formal mathematical and analytical roots</strong>
+                — I love tackling real-world problems by designing
+                <strong class="hl">AI engineering solutions</strong> that fit.
+              </p>
+            </li>
+            <li class="about-point">
+              <div class="point-head">
+                <span class="point-num" aria-hidden="true">04</span>
+                <h3 class="point-title">Recent work</h3>
+              </div>
+              <ul class="point-list">
+                <li>Facial-image privatization with faceswappers + diffusion models</li>
+                <li>Transformer-based object detection for crop yield</li>
+                <li>Behavior recognition from rodent video</li>
+                <li>Full-stack AI survey platform</li>
+              </ul>
+            </li>
+          </ul>
+
+          <aside class="fact-card reveal" aria-label="Quick facts">
+            <h3>Quick facts</h3>
+            <ul class="fact-list">
+              <li>
+                <div>
+                  <span class="label">Currently</span>
+                  Ph.D. CS · Kansas State University
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="label">Focus</span>
+                  Computer Vision · Privacy-first GenAI · Verification
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="label">Stack</span>
+                  Python · PyTorch · CUDA · Linux/HPC
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="label">Open to</span>
+                  Research collaborations · ML engineering roles
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================================================================
+         Projects
+         ================================================================== -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <p class="section-eyebrow">02 — Projects</p>
+        <h2 class="section-title" id="projects-title">Selected <span class="accent">AI/ML projects</span>.</h2>
+        <p class="section-lede">
+          Eight projects spanning computer vision, generative AI, privacy, video understanding,
+          and verification. Filter by area to narrow the view, then click any card to read details.
+        </p>
+
+        <div class="filter-rail" role="toolbar" aria-label="Filter projects by area" id="project-filters">
+          <button type="button" class="chip is-active" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="vision">Computer Vision</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="privacy">Privacy</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="genai">Generative AI</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="video">Video</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="detection">Detection</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="verification">Verification</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="platform">Platform</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <article class="card project-card reveal" data-tags="vision privacy genai">
+            <details class="project-disclosure">
+              <summary class="project-summary">
+              <div class="project-head">
+                <h3 class="project-title">Facial Image Privatization for Pediatric Hospital Data</h3>
+                <span class="project-date">Jan 2026 — Present</span>
+              </div>
+              <p class="project-org">Kansas State University · LSU Collaboration</p>
+              <span class="project-chevron" aria-hidden="true">
+                <svg width="16" height="16"><use href="#i-chevron"/></svg>
+              </span>
+            </summary>
+              <div class="project-body">
+              <ul class="project-bullets">
+                <li>Designing privacy-preserving face transformation pipelines for safe data release.</li>
+                <li>Evaluating Faceswappers (FaceFusion, InstantID, E4S), Stable Diffusion, and StyleGAN for anonymization-quality and utility trade-offs.</li>
+                <li>Applying (ε,δ)-DP and LDP framing to quantify and reduce privacy leakage in identity embeddings.</li>
+                <li class="collab"><span class="collab-label">Collaborators:</span> Prof. George Amariucai, Dr. Michael Dunham, Prof. Shuangqing Wei, Prof. Doina Caragea.</li>
+              </ul>
+            </div>
+            </details>
+            <div class="project-tags">
+              <span class="tag is-primary">Computer Vision</span>
+              <span class="tag is-primary">Privacy</span>
+              <span class="tag">Generative AI</span>
+              <span class="tag">FaceFusion · InstantID · StyleGAN</span>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-tags="platform genai">
+            <details class="project-disclosure">
+              <summary class="project-summary">
+              <div class="project-head">
+                <h3 class="project-title">AI-Enabled Survey Administration &amp; Deployment Platform</h3>
+                <span class="project-date">Apr 2026</span>
+              </div>
+              <p class="project-org">Kansas State University · "Survway"</p>
+              <span class="project-chevron" aria-hidden="true">
+                <svg width="16" height="16"><use href="#i-chevron"/></svg>
+              </span>
+            </summary>
+              <div class="project-body">
+              <ul class="project-bullets">
+                <li>Co-developed a full-stack survey platform using Next.js/TypeScript, FastAPI, SQLAlchemy, and PostgreSQL.</li>
+                <li>Built AI capabilities including an Analyst Assistant with streaming responses and Python-based analysis of survey data.</li>
+                <li>Implemented end-to-end features for branching survey flows, analytics dashboards, and Dockerized deployment workflows.</li>
+                <li class="collab"><span class="collab-label">Collaborators:</span> Prof. George Amariucai, Arman Zareian.</li>
+              </ul>
+            </div>
+            </details>
+            <div class="project-tags">
+              <span class="tag is-primary">Platform</span>
+              <span class="tag is-primary">Agentic AI</span>
+              <span class="tag">Next.js · FastAPI · PostgreSQL</span>
+              <span class="tag">Docker</span>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-tags="vision video">
+            <details class="project-disclosure">
+              <summary class="project-summary">
+              <div class="project-head">
+                <h3 class="project-title">Video Classification of Social Behavior in Rats</h3>
+                <span class="project-date">Aug 2025</span>
+              </div>
+              <p class="project-org">Kansas State University</p>
+              <span class="project-chevron" aria-hidden="true">
+                <svg width="16" height="16"><use href="#i-chevron"/></svg>
+              </span>
+            </summary>
+              <div class="project-body">
+              <ul class="project-bullets">
+                <li>Built behavior classification pipelines using spatiotemporal deep learning models.</li>
+                <li>Implemented and evaluated 3D ResNet-based models for behavior recognition from video sequences.</li>
+                <li>Improved robustness by combining keypoint estimation with rule-based heuristics.</li>
+                <li class="collab"><span class="collab-label">Collaborators:</span> Prof. Doina Caragea.</li>
+              </ul>
+            </div>
+            </details>
+            <div class="project-tags">
+              <span class="tag is-primary">Video Understanding</span>
+              <span class="tag is-primary">Computer Vision</span>
+              <span class="tag">3D ResNet</span>
+              <span class="tag">DeepLabCut</span>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-tags="vision detection">
+            <details class="project-disclosure">
+              <summary class="project-summary">
+              <div class="project-head">
+                <h3 class="project-title">Transformer-Based Object Detection for Sorghum Yield Estimation</h3>
+                <span class="project-date">Jun 2024 — Dec 2024</span>
+              </div>
+              <p class="project-org">Kansas State University</p>
+              <span class="project-chevron" aria-hidden="true">
+                <svg width="16" height="16"><use href="#i-chevron"/></svg>
+              </span>
+            </summary>
+              <div class="project-body">
+              <ul class="project-bullets">
+                <li>Developed transformer-based object detection models for crop yield estimation from field imagery.</li>
+                <li>Ran experiment pipelines, benchmarking, and error analysis to improve detection quality.</li>
+                <li class="collab"><span class="collab-label">Collaborators:</span> Prof. Doina Caragea.</li>
+              </ul>
+            </div>
+            </details>
+            <div class="project-tags">
+              <span class="tag is-primary">Detection</span>
+              <span class="tag is-primary">Vision Transformers</span>
+              <span class="tag">PyTorch</span>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-tags="vision detection">
+            <details class="project-disclosure">
+              <summary class="project-summary">
+              <div class="project-head">
+                <h3 class="project-title">Sorghum Yield Estimation from Field Imagery</h3>
+                <span class="project-date">Dec 2023</span>
+              </div>
+              <p class="project-org">Kansas State University</p>
+              <span class="project-chevron" aria-hidden="true">
+                <svg width="16" height="16"><use href="#i-chevron"/></svg>
+              </span>
+            </summary>
+              <div class="project-body">
+              <ul class="project-bullets">
+                <li>Developed object detection models (YOLO, R-CNN) in PyTorch for sorghum panicle-head detection.</li>
+                <li><span class="metric">97% AP@IoU=0.5</span> on the best-performing model.</li>
+                <li class="collab"><span class="collab-label">Collaborators:</span> Aliva Bakshi, Prof. Abdullah Al Bari, Prof. Doina Caragea.</li>
+              </ul>
+            </div>
+            </details>
+            <div class="project-tags">
+              <span class="tag is-primary">Detection</span>
+              <span class="tag is-primary">Computer Vision</span>
+              <span class="tag">YOLO · R-CNN</span>
+              <span class="tag">PyTorch</span>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-tags="verification">
+            <details class="project-disclosure">
+              <summary class="project-summary">
+              <div class="project-head">
+                <h3 class="project-title">Neural Network Verification Tooling</h3>
+                <span class="project-date">Jan 2022 — May 2023</span>
+              </div>
+              <p class="project-org">Kansas State University</p>
+              <span class="project-chevron" aria-hidden="true">
+                <svg width="16" height="16"><use href="#i-chevron"/></svg>
+              </span>
+            </summary>
+              <div class="project-body">
+              <ul class="project-bullets">
+                <li>Built Python/MATLAB tools for neural network verification and cyber-physical systems workflows.</li>
+                <li>Contributed to algorithm design and reproducible evaluation pipelines with improved runtime efficiency.</li>
+                <li class="collab"><span class="collab-label">Collaborator:</span> Prof. Pavithra Prabhakar.</li>
+              </ul>
+            </div>
+            </details>
+            <div class="project-tags">
+              <span class="tag is-primary">Verification</span>
+              <span class="tag">Python · MATLAB</span>
+              <span class="tag">Cyber-physical Systems</span>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-tags="verification">
+            <details class="project-disclosure">
+              <summary class="project-summary">
+              <div class="project-head">
+                <h3 class="project-title">Interval Neural Network Verification</h3>
+                <span class="project-date">Jan 2023</span>
+              </div>
+              <p class="project-org">Kansas State University</p>
+              <span class="project-chevron" aria-hidden="true">
+                <svg width="16" height="16"><use href="#i-chevron"/></svg>
+              </span>
+            </summary>
+              <div class="project-body">
+              <ul class="project-bullets">
+                <li>Built a Python/MATLAB verification tool for interval neural networks.</li>
+                <li><span class="metric">10× faster</span> on average than prior state-of-the-art methods.</li>
+                <li class="collab"><span class="collab-label">Collaborator:</span> Prof. Pavithra Prabhakar.</li>
+              </ul>
+            </div>
+            </details>
+            <div class="project-tags">
+              <span class="tag is-primary">Verification</span>
+              <span class="tag is-primary">Reachability Analysis</span>
+              <span class="tag">Python · MATLAB</span>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-tags="verification">
+            <details class="project-disclosure">
+              <summary class="project-summary">
+              <div class="project-head">
+                <h3 class="project-title">Automated Program Verification Tools</h3>
+                <span class="project-date">Aug 2020 — Oct 2021</span>
+              </div>
+              <p class="project-org">Indian Institute of Science, Bangalore</p>
+              <span class="project-chevron" aria-hidden="true">
+                <svg width="16" height="16"><use href="#i-chevron"/></svg>
+              </span>
+            </summary>
+              <div class="project-body">
+              <ul class="project-bullets">
+                <li>Built Python tooling for automated verification of while-loop programs using automata-theoretic methods.</li>
+                <li>Implemented invariant synthesis components to support correctness-focused analysis workflows.</li>
+              </ul>
+            </div>
+            </details>
+            <div class="project-tags">
+              <span class="tag is-primary">Verification</span>
+              <span class="tag">Automata Theory</span>
+              <span class="tag">Invariant Synthesis</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================================================================
+         Skills
+         ================================================================== -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="section-eyebrow">03 — Skills</p>
+        <h2 class="section-title" id="skills-title">Tools &amp; <span class="accent">capabilities</span>.</h2>
+
+        <div class="skills-grid">
+
+          <div class="card skill-group reveal">
+            <h3>Core AI/ML</h3>
+            <div class="skill-list">
+              <span class="tag is-primary">Agentic AI</span>
+              <span class="tag is-primary">Vision Transformers (ViT)</span>
+              <span class="tag is-primary">ResNet</span>
+              <span class="tag is-primary">CNNs</span>
+              <span class="tag is-primary">InsightFace</span>
+              <span class="tag is-primary">YOLO</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3>AI Productivity Stack</h3>
+            <div class="skill-list">
+              <span class="tag">Cursor AI</span>
+              <span class="tag">Claude Opus 4.7</span>
+              <span class="tag">Gemini 3.0 Deep Research</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3>Model Development</h3>
+            <div class="skill-list">
+              <span class="tag">Hyperparameter tuning</span>
+              <span class="tag">Loss design (similarity)</span>
+              <span class="tag">Large-scale training</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3>Programming</h3>
+            <div class="skill-list">
+              <span class="tag is-primary">Python (expert)</span>
+              <span class="tag">Bash / Shell</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3>Frameworks &amp; Libraries</h3>
+            <div class="skill-list">
+              <span class="tag is-primary">PyTorch</span>
+              <span class="tag">DataParallel</span>
+              <span class="tag">DataLoader</span>
+              <span class="tag">Custom autograd</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">DeepLabCut</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">SciPy</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3>Systems &amp; Infrastructure</h3>
+            <div class="skill-list">
+              <span class="tag is-primary">Linux (Ubuntu, WSL)</span>
+              <span class="tag is-primary">NVIDIA A40 / A100</span>
+              <span class="tag">Remote GPU / HPC</span>
+              <span class="tag">SSH dev</span>
+              <span class="tag">Conda / venv</span>
+              <span class="tag">Server troubleshooting</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3>MLOps &amp; Collaboration</h3>
+            <div class="skill-list">
+              <span class="tag">Git / GitHub</span>
+              <span class="tag">Experiment tracking</span>
+              <span class="tag">Dataset sanitization</span>
+              <span class="tag">Preprocessing pipelines</span>
+            </div>
+          </div>
+
+          <div class="card skill-group reveal">
+            <h3>Research &amp; Communication</h3>
+            <div class="skill-list">
+              <span class="tag">Mathematical modeling (privacy)</span>
+              <span class="tag">Technical writing</span>
+              <span class="tag">IEEE-style venues</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================================================================
+         Education
+         ================================================================== -->
+    <section id="education" class="section" aria-labelledby="education-title">
+      <div class="container">
+        <p class="section-eyebrow">04 — Education</p>
+        <h2 class="section-title" id="education-title">Academic <span class="accent">background</span>.</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-title">Kansas State University</h3>
+              <span class="timeline-dates">Jan 2022 — Jan 2027 (Expected)</span>
+            </div>
+            <p class="timeline-sub">Ph.D. in Computer Science · Manhattan, KS, USA</p>
+            <div class="timeline-meta">
+              <span class="tag is-primary">GPA 4.0</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Privacy-preserving GenAI</span>
+              <span class="tag">Verification</span>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-title">Indian Institute of Science</h3>
+              <span class="timeline-dates">Aug 2015 — May 2020</span>
+            </div>
+            <p class="timeline-sub">B.S. (Research) · Major in Mathematics · Bangalore, India</p>
+            <div class="timeline-meta">
+              <span class="tag is-primary">Mathematics</span>
+              <span class="tag">Automata Theory</span>
+              <span class="tag">Inductive Invariants</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ==================================================================
+         Research & Presentations
+         ================================================================== -->
+    <section id="research" class="section" aria-labelledby="research-title">
+      <div class="container">
+        <p class="section-eyebrow">05 — Research</p>
+        <h2 class="section-title" id="research-title">Talks &amp; <span class="accent">presentations</span>.</h2>
+        <p class="section-lede">Selected research presentations and publications.</p>
+
+        <ol class="research-list">
+
+          <li class="card citation reveal">
+            <p class="ref-venue">ARISE Symposium · Apr 9–10, 2026 · Lawrence, KS</p>
+            <h3 class="ref-title">Survway: A Next-Generation Conversational Survey Platform with AI Validation</h3>
+            <p class="ref-authors"><span class="me">Vishnu Bondalakunta</span>, Arman Zareian. Poster / Oral Presentation.</p>
+            <div class="ref-meta">
+              <span class="tag is-primary">Agentic AI</span>
+              <span class="tag">Survey Platform</span>
+            </div>
+          </li>
+
+          <li class="card citation reveal">
+            <p class="ref-venue">IEEE CDC 2023 · Singapore · Dec 13–15, 2023</p>
+            <h3 class="ref-title">Star-Based Reachability Analysis of Interval Neural Networks</h3>
+            <p class="ref-authors"><span class="me">Vishnu Bondalakunta</span>, Pavithra Prabhakar.</p>
+            <div class="ref-meta">
+              <span class="tag is-primary">First Author</span>
+              <span class="tag">Verification</span>
+              <span class="tag">Reachability</span>
+            </div>
+          </li>
+
+          <li class="card citation reveal">
+            <p class="ref-venue">SICNA 2024 · Poster Presentation</p>
+            <h3 class="ref-title">Computer Vision and Deep Learning Integrated with Aerial Imagery to Estimate Sorghum Yield</h3>
+            <p class="ref-authors">Md Abdullah Al Bari, Aliva Bakshi, Trevor Witt, <span class="me">Vishnu Bondalakunta</span>, Swaraj Pramanik, Doina Caragea, Krishna Jagadish, Terry Felderhoff.</p>
+            <div class="ref-meta">
+              <span class="tag is-primary">Computer Vision</span>
+              <span class="tag">Aerial Imagery</span>
+              <span class="tag">Deep Learning</span>
+            </div>
+          </li>
+
+          <li class="card citation reveal">
+            <p class="ref-venue">Undergraduate Thesis · IISc, Bangalore · May 30, 2020</p>
+            <h3 class="ref-title">A SMT-Based Algorithm for Synthesizing Inductive Invariants</h3>
+            <p class="ref-authors"><span class="me">Vishnu Bondalakunta</span>, Sumanth Prabhu, Deepak D'Souza.</p>
+            <div class="ref-meta">
+              <span class="tag is-primary">First Author</span>
+              <span class="tag">SMT</span>
+              <span class="tag">Program Verification</span>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ==================================================================
+         Contact
+         ================================================================== -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="section-eyebrow">06 — Contact</p>
+        <h2 class="section-title" id="contact-title">Let's <span class="accent">build something</span>.</h2>
+        <p class="section-lede">
+          The fastest path is email. I'm open to research collaborations and ML
+          engineering roles.
+        </p>
+
+        <div class="contact-grid">
+          <a class="card contact-card is-primary" href="mailto:vteja.bon997@gmail.com" aria-label="Send email">
+            <span class="label"><svg class="icon" aria-hidden="true" width="14" height="14"><use href="#i-mail"/></svg> Email</span>
+            <span class="value">vteja.bon997@gmail.com</span>
+            <span class="hint">Best way to reach me</span>
+            <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+
+          <a class="card contact-card" href="https://github.com/vishnuteja97" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <span class="label"><svg class="icon" aria-hidden="true" width="14" height="14"><use href="#i-github"/></svg> GitHub</span>
+            <span class="value">@vishnuteja97</span>
+            <span class="hint">github.com/vishnuteja97</span>
+            <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+
+          <a class="card contact-card" href="https://www.linkedin.com/in/vishnu-bondalakunta-613464142/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <span class="label"><svg class="icon" aria-hidden="true" width="14" height="14"><use href="#i-linkedin"/></svg> LinkedIn</span>
+            <span class="value">vishnu-bondalakunta</span>
+            <span class="hint">linkedin.com/in/vishnu-bondalakunta</span>
+            <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <span>© <span id="year">2026</span> Vishnu Bondalakunta</span>
+        <span class="built">Built with <span class="neon-dot" aria-hidden="true"></span> Neon</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js?v=3" defer></script>
+</body>
+</html>
