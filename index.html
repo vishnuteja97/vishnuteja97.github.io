@@ -205,7 +205,8 @@
                 <h3 class="point-title">Recent work</h3>
               </div>
               <ul class="point-list">
-                <li>Facial-image privatization with faceswappers + diffusion models</li>
+                <li>Face-swapping privacy: identity leakage, adversarial evaluation, and cascade modeling</li>
+                <li>Medical video privacy and infant distress recognition</li>
                 <li>Transformer-based object detection for crop yield</li>
                 <li>Behavior recognition from rodent video</li>
                 <li>Full-stack AI survey platform</li>
@@ -220,6 +221,12 @@
                 <div>
                   <span class="label">Currently</span>
                   Ph.D. CS · Kansas State University
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="label">Expected graduation</span>
+                  May 2027
                 </div>
               </li>
               <li>
@@ -287,9 +294,11 @@
             </summary>
               <div class="project-body">
               <ul class="project-bullets">
-                <li>Designing privacy-preserving face transformation pipelines for safe data release.</li>
-                <li>Evaluating Faceswappers (FaceFusion, InstantID, E4S), Stable Diffusion, and StyleGAN for anonymization-quality and utility trade-offs.</li>
-                <li>Applying (ε,δ)-DP and LDP framing to quantify and reduce privacy leakage in identity embeddings.</li>
+                <li>Developing face transformation pipelines for pediatric medical-data sharing, studying how to reduce identity exposure while preserving useful facial information.</li>
+                <li>Evaluated seven face-swapping systems on public face benchmarks, measuring residual identity leakage through adversarial comparisons with other photographs of the same person.</li>
+                <li>Developed an interpretable linear stochastic model of identity transfer for FaceFusion, BlendFace, and CanonSwap, and tested how leakage changes over repeated swaps, including cascades of up to 25 passes.</li>
+                <li>Led <em>Toward Interpretable Privacy Guarantees in Face-Swapping Anonymization</em>, accepted to appear at IEEE S&amp;P 2027.</li>
+                <li>Related work includes a medical-video privacy framework (HealthSec 2026 poster paper) and cross-domain infant distress recognition (ICTAI 2026), both accepted to appear.</li>
                 <li class="collab"><span class="collab-label">Collaborators:</span> Prof. George Amariucai, Dr. Michael Dunham, Prof. Shuangqing Wei, Prof. Doina Caragea.</li>
               </ul>
             </div>
@@ -298,7 +307,9 @@
               <span class="tag is-primary">Computer Vision</span>
               <span class="tag is-primary">Privacy</span>
               <span class="tag">Generative AI</span>
-              <span class="tag">FaceFusion · InstantID · StyleGAN</span>
+              <span class="tag">Identity Leakage</span>
+              <span class="tag">Stochastic Modeling</span>
+              <span class="tag">FaceFusion · BlendFace · CanonSwap</span>
             </div>
           </article>
 
@@ -644,7 +655,7 @@
           <li class="timeline-item reveal">
             <div class="timeline-head">
               <h3 class="timeline-title">Kansas State University</h3>
-              <span class="timeline-dates">Jan 2022 — Jan 2027 (Expected)</span>
+              <span class="timeline-dates">Jan 2022 — May 2027 (Expected)</span>
             </div>
             <p class="timeline-sub">Ph.D. in Computer Science · Manhattan, KS, USA</p>
             <div class="timeline-meta">
@@ -673,15 +684,49 @@
 
 
     <!-- ==================================================================
-         Research & Presentations
+         Publications & Presentations
          ================================================================== -->
     <section id="research" class="section" aria-labelledby="research-title">
       <div class="container">
         <p class="section-eyebrow">05 — Research</p>
-        <h2 class="section-title" id="research-title">Talks &amp; <span class="accent">presentations</span>.</h2>
-        <p class="section-lede">Selected research presentations and publications.</p>
+        <h2 class="section-title" id="research-title">Publications &amp; <span class="accent">presentations</span>.</h2>
+        <p class="section-lede">Research in facial privacy, medical video understanding, computer vision, and verification.</p>
 
         <ol class="research-list">
+
+          <li class="card citation reveal">
+            <p class="ref-venue">IEEE Symposium on Security and Privacy (S&amp;P) · 2027 · Accepted to appear</p>
+            <h3 class="ref-title">Toward Interpretable Privacy Guarantees in Face-Swapping Anonymization</h3>
+            <p class="ref-authors"><span class="me">Vishnu Bondalakunta</span>, Arman Zareian, Shuangqing Wei, George Amariucai.</p>
+            <div class="ref-meta">
+              <span class="tag is-primary">First Author</span>
+              <span class="tag">Facial Privacy</span>
+              <span class="tag">Face Swapping</span>
+              <span class="tag">Stochastic Modeling</span>
+            </div>
+          </li>
+
+          <li class="card citation reveal">
+            <p class="ref-venue">38th IEEE International Conference on Tools with Artificial Intelligence (ICTAI) · 2026 · Accepted to appear</p>
+            <h3 class="ref-title">Multi-Representation Facial Feature Fusion for Cross-Domain Infant Distress Recognition</h3>
+            <p class="ref-authors">Mohammad Akbar Bin Shah, Arman Zareian, <span class="me">Vishnu Bondalakunta</span>, Naimul Haque, Shuangqing Wei, Xiaoliang Wan, Michael Dunham, George Amariucai, Doina Caragea.</p>
+            <div class="ref-meta">
+              <span class="tag is-primary">Medical AI</span>
+              <span class="tag">Feature Fusion</span>
+              <span class="tag">Infant Distress Recognition</span>
+            </div>
+          </li>
+
+          <li class="card citation reveal">
+            <p class="ref-venue">ACSAC Cybersecurity in Healthcare (HealthSec) Workshop · 2026 · Poster paper · Accepted to appear</p>
+            <h3 class="ref-title">A Privacy-Preserving Framework for Sharing and Learning from Scarce Medical Video</h3>
+            <p class="ref-authors"><span class="me">Vishnu Bondalakunta</span>, Arman Zareian, Mohammad Akbar Bin Shah, Naimul Haque, George Amariucai, Doina Caragea, Shuangqing Wei, Xiaoliang Wan, Michael Dunham.</p>
+            <div class="ref-meta">
+              <span class="tag is-primary">First Author</span>
+              <span class="tag">Medical Video</span>
+              <span class="tag">Privacy</span>
+            </div>
+          </li>
 
           <li class="card citation reveal">
             <p class="ref-venue">ARISE Symposium · Apr 9–10, 2026 · Lawrence, KS</p>
